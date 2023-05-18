@@ -1,9 +1,9 @@
 import tkinter as tk
-from tkinter import messagebox
 import subprocess
+from tkinter import messagebox
 
 def on_button_click():
-    subprocess.call(['sudo', 'airodump-ng', 'wlan0'])
+    subprocess.Popen(["x-terminal-emulator", "-e", "sudo airodump-ng wlan0"])
 
 def exit_script():
     result = messagebox.askquestion("Exit", "Are you sure you want to exit?")
@@ -22,11 +22,11 @@ window.configure(bg="black")
 window.option_add('*titlebackground', 'black')
 
 # Create a label
-label = tk.Label(window, text="Welcome to the aircrack GUI for Raspberry Pi! (made by vertydagenius)")
+label = tk.Label(window, text="Welcome to the aircrack gui for raspberry pi! (made by vertydagenius)")
 label.pack()
 
 # Create a button
-button = tk.Button(window, text="Scan BSSIDs", command=on_button_click)
+button = tk.Button(window, text="Scan bssids", command=on_button_click)
 button.pack()
 
 # Create an exit button
