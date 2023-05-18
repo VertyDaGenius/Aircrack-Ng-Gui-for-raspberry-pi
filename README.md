@@ -1,4 +1,5 @@
 # Aircrack-Ng-Gui-for-raspberry-pi
+# sorry for the messy steps
 gui for the raspberry pi for aircrack ng
 -
 requirements:
