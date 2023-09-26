@@ -1,4 +1,4 @@
-import tkinter as tk
+import tkinter as tk #not finished.
 import subprocess
 from tkinter import messagebox
 
